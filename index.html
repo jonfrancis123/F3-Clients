@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TrackStrong</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f5f5f5;
+  --surface: #ffffff;
+  --surface2: #f0f0f0;
+  --surface3: #e8e8e8;
+  --border: #ddd;
+  --accent: #1a1a2e;
+  --accent-light: #333355;
+  --text: #1a1a1a;
+  --text-muted: #888;
+  --danger: #e53e3e;
+  --superset-color: #2563eb;
+  --accessory-color: #d97706;
+  --warmup-color: #16a34a;
+  --radius: 12px;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{height:100%;overflow:hidden;}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;display:flex;flex-direction:column;}
+input,textarea{-webkit-user-select:text!important;user-select:text!important;touch-action:manipulation;cursor:text;}
+.screen{display:none;flex-direction:column;height:100%;overflow:hidden;}
+.screen.active{display:flex;}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:13px 16px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;z-index:10;box-shadow:0 1px 4px rgba(0,0,0,.06);}
+.topbar-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:3px;color:var(--accent);}
+.topbar-title{font-family:'Bebas Neue',sans-serif;font-size:19px;letter-spacing:2px;color:var(--text);}
+.btn{background:var(--accent);border:none;border-radius:8px;color:#fff;cursor:pointer;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;padding:14px;width:100%;transition:background .2s,transform .1s;}
+.btn:hover{background:var(--accent-light);}
+.btn:active{transform:scale(.98);}
+.btn:disabled{opacity:.4;cursor:not-allowed;}
+.btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:8px 13px;border-radius:8px;cursor:pointer;transition:all .2s;}
+.btn-ghost:hover{background:var(--surface2);}
+.btn-danger{background:var(--danger);color:#fff;border:none;}
+.btn-danger:hover{background:#c53030;}
+.icon-btn{background:transparent
